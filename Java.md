@@ -1,5 +1,27 @@
 # Core Java
 ## Object
+
+### int x=10
+10 --> Constant | literal
+x --> Identifier
+int--> data Type
+
+### Primitive Data Type:
+Specifies the size and type of variable values, and it has no additional methods. There are 3 primitive data type.
+1. Numeric Data Type: int, byte, short, long. This all can represent -ve or +ve number.
+2. Char Type
+3. Boolean Data Type
+
+### public static void main(String[] args):
+Whether the class contain the main method or not is been checked by JVM at runtime. If it dont found any method then it will throw noSuchMethodError. It is the starting point.
+public: JVM to give access that it can call the method.
+static: Without Object JVM can call by using class refrence.
+void: no outut return from JVM.
+main: Name which is configured inside JVM.
+String[] args: Command Line arguments.
+
+### Why Java is not object oriented programming language?
+Pure Object Oriented Language or Complete Object Oriented Language are Fully Object Oriented Language which supports or have features which treats everything inside program as objects. It doesn’t support primitive datatype(like int, char, float, bool, etc.). But in Java it support primitive data Type.
 ### 1. Abstraction
 
 Abstraction is the concept of hiding the internal details and describing things in simple terms. For example, a method that adds two integers. The internal processing of the method is hidden from the outer world. There are many ways to achieve abstraction in object-oriented programmings, such as encapsulation and inheritance.
@@ -360,6 +382,10 @@ Some of the best practices related to Java Exception Handling are:
 -   Follow naming convention, always end with Exception.
 -   Document the Exceptions Thrown by a method using @throws in javadoc.
 -   Exceptions are costly, so throw it only when it makes sense. Else you can catch them and provide null or empty response.
+
+### When to use custom Exception:
+Any Exception that provide information or functionality that is not part of standard Java exception, then its good to write the custom exception. Ex: TicketNotAvailable, By checking certain creiteria as per business functionality if we run out from seat then I have to throw this exception otherwise it always better to use the Java standard exception.
+
 ## Java Question:
 ### What is the importance of main method in Java?
 
